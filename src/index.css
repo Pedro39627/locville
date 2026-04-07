@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 60 10% 97%;
+    --foreground: 80 30% 12%;
+
+    --card: 60 10% 97%;
+    --card-foreground: 80 30% 12%;
+
+    --popover: 60 10% 97%;
+    --popover-foreground: 80 30% 12%;
+
+    --primary: 45 70% 42%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 80 25% 18%;
+    --secondary-foreground: 50 20% 92%;
+
+    --muted: 60 10% 93%;
+    --muted-foreground: 80 10% 40%;
+
+    --accent: 45 80% 48%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 60 10% 88%;
+    --input: 60 10% 88%;
+    --ring: 45 70% 42%;
+
+    --radius: 0.75rem;
+
+    --construction-dark: 80 25% 18%;
+    --construction-darker: 80 30% 12%;
+    --construction-gray: 80 10% 35%;
+    --construction-light: 60 10% 95%;
+    --construction-yellow: 45 70% 42%;
+    --construction-orange: 45 80% 48%;
+    --construction-green: 142 72% 42%;
+
+    --sidebar-background: 60 10% 97%;
+    --sidebar-foreground: 80 25% 20%;
+    --sidebar-primary: 80 25% 18%;
+    --sidebar-primary-foreground: 50 20% 92%;
+    --sidebar-accent: 60 10% 93%;
+    --sidebar-accent-foreground: 80 25% 18%;
+    --sidebar-border: 60 10% 88%;
+    --sidebar-ring: 45 70% 42%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-shadow-hero {
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  }
+}
