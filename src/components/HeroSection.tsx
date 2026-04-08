@@ -10,7 +10,7 @@ const HeroSection = () => {
     <section id="inicio" className="relative min-h-[100svh] flex items-center pt-16">
       <div className="absolute inset-0">
         <picture className="block w-full h-full">
-          <source media="(max-width: 768px)" srcSet={heroBgPort} />
+          <source media="(max-width: 768px)" srcSet={heroBg} />
           <img
             src={heroBg}
             alt="Canteiro de obras"
@@ -22,10 +22,10 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-construction-darker/70 md:bg-construction-darker/75" />
       </div>
 
-      <div className="container relative z-10 py-14 md:py-32 flex justify-between items-center">
-        <div className="max-w-3xl -ml-2 md:-ml-8 lg:-ml-12">
+      <div className="container relative z-10 py-14 md:py-32 flex justify-center items-center">
+        <div className="max-w-3xl text-center md:text-left -ml-2 md:-ml-8 lg:-ml-12 flex flex-col items-center md:items-start">
           <span className="inline-block bg-primary px-4 py-1.5 rounded-full text-[10px] md:text-xs font-bold text-primary-foreground uppercase tracking-wider mb-4 md:mb-6 animate-pulse">
-            Locação de Equipamentos para Construção
+            Locação Simples, Obra Completa 
           </span>
 
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-black leading-tight mb-5 md:mb-6 text-secondary-foreground text-shadow-hero">
@@ -38,25 +38,27 @@ const HeroSection = () => {
             <strong className="text-secondary-foreground">Joinville e região</strong>.
           </p>
           
+          <div className="flex flex-col xl:flex-row items-center xl:items-start gap-8 mt-4 md:mt-8 w-full">
+            <a
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex w-full sm:w-auto justify-center items-center gap-3 bg-construction-green hover:brightness-110 px-6 md:px-8 py-4 rounded-xl text-base md:text-lg font-bold text-accent-foreground transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+            >
+              <MessageCircle className="w-5 h-5" />
+              Solicitar Orçamento Agora
+            </a>
 
-          <a
-            href={WHATSAPP_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex w-full sm:w-auto justify-center items-center gap-3 mt-8 md:mt-12 bg-construction-green hover:brightness-110 px-6 md:px-8 py-4 rounded-xl text-base md:text-lg font-bold text-accent-foreground transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
-          >
-            <MessageCircle className="w-5 h-5" />
-            Solicitar Orçamento Agora
-          </a>
-        </div>
-
-        {/* Logo flutuante no lado direito (visível apenas em telas grandes) */}
-        <div className="hidden lg:flex flex-1 justify-end ml-10">
-          <img 
-            src={logo} 
-            alt="Locville Logo" 
-            className="w-auto h-64 xl:h-80 object-contain drop-shadow-2xl opacity-90 transition-transform duration-700 hover:scale-105" 
-          />
+            {/* Logo flutuante ao lado do botão, visível de telas grandes (xl) para cima e bem centralizado
+            <div className="hidden xl:flex items-center justify-center">
+              <img 
+                src={logo} 
+                alt="Locville Logo" 
+                className="w-auto h-20 xl:h-28 object-contain drop-shadow-2xl opacity-95 transition-transform duration-700 hover:scale-105" 
+              />
+            </div>
+            */}
+          </div>
         </div>
       </div>
     </section>

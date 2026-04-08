@@ -16,9 +16,9 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-secondary/95 backdrop-blur-md border-b border-construction-gray/30">
-      <div className="container flex items-center justify-between h-16 md:h-20">
+      <div className="container flex items-center justify-between h-20 md:h-24">
         <a href="#inicio" className="flex items-center gap-2">
-          <img src={logo} alt="Locville" className="h-8 md:h-10 w-auto" />
+          <img src={logo} alt="Locville" className="h-16 md:h-20 w-auto pt-2" />
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
