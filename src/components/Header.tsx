@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
+import logo from "@/assets/logo-bg-transparent.png";
 
 const WHATSAPP_LINK = "https://wa.me/5547996199995?text=Olá! Gostaria de solicitar um orçamento.";
 
@@ -17,7 +18,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-secondary/95 backdrop-blur-md border-b border-construction-gray/30">
       <div className="container flex items-center justify-between h-16 md:h-20">
         <a href="#inicio" className="flex items-center gap-2">
-          <span className="text-xl font-black text-primary tracking-wide">LOCVILLE</span>
+          <img src={logo} alt="Locville" className="h-8 md:h-10 w-auto" />
         </a>
 
         <nav className="hidden md:flex items-center gap-8">

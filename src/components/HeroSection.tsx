@@ -1,6 +1,7 @@
 import { MessageCircle } from "lucide-react";
-import heroBg from "@/assets/locville-bg.png";
+import heroBg from "@/assets/locville-bg-clean.png";
 import heroBgPort from "@/assets/locville-bg-port.png";
+import logo from "@/assets/logo-bg-transparent.png";
 
 const WHATSAPP_LINK = "https://wa.me/5547996199995?text=Olá! Gostaria de solicitar um orçamento.";
 
@@ -21,8 +22,8 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-construction-darker/70 md:bg-construction-darker/75" />
       </div>
 
-      <div className="container relative z-10 py-14 md:py-32">
-        <div className="max-w-3xl">
+      <div className="container relative z-10 py-14 md:py-32 flex justify-between items-center">
+        <div className="max-w-3xl -ml-2 md:-ml-8 lg:-ml-12">
           <span className="inline-block bg-primary px-4 py-1.5 rounded-full text-[10px] md:text-xs font-bold text-primary-foreground uppercase tracking-wider mb-4 md:mb-6 animate-pulse">
             Locação de Equipamentos para Construção
           </span>
@@ -47,6 +48,15 @@ const HeroSection = () => {
             <MessageCircle className="w-5 h-5" />
             Solicitar Orçamento Agora
           </a>
+        </div>
+
+        {/* Logo flutuante no lado direito (visível apenas em telas grandes) */}
+        <div className="hidden lg:flex flex-1 justify-end ml-10">
+          <img 
+            src={logo} 
+            alt="Locville Logo" 
+            className="w-auto h-64 xl:h-80 object-contain drop-shadow-2xl opacity-90 transition-transform duration-700 hover:scale-105" 
+          />
         </div>
       </div>
     </section>
