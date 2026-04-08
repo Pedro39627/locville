@@ -1,7 +1,7 @@
 import { Wrench, Zap, Flame, HardHat } from "lucide-react";
 import { MessageCircle } from "lucide-react";
 
-const WHATSAPP_LINK = "https://wa.me/5547984710900?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20or%C3%A7amento.";
+const WHATSAPP_LINK = "https://wa.me/5547996199995?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20or%C3%A7amento.";
 
 const categories = [
   {
