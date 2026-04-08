@@ -17,7 +17,7 @@ const categories = [
   {
     icon: Flame,
     title: "Equipamentos a Combustão",
-    desc: "Cortadoras, geradores e compressores a gasolina ou diesel.",
+    desc: "Roçadeiras, geradores e compressores a combustão.",
   },
   {
     icon: Wrench,

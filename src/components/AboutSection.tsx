@@ -1,7 +1,7 @@
 import { Shield, Clock, ThumbsUp } from "lucide-react";
 
 const features = [
-  { icon: Shield, title: "Alta Performance", desc: "Equipamentos revisados e prontos para uso imediato." },
+  { icon: Shield, title: "Equipamentos de Alta Qualidade", desc: "Equipamentos revisados e prontos para uso imediato." },
   { icon: Clock, title: "Atendimento Rápido", desc: "Entrega ágil para não atrasar a sua obra." },
   { icon: ThumbsUp, title: "Preço Justo", desc: "Condições especiais para locações de curta e longa duração." },
 ];

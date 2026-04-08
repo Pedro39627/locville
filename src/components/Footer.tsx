@@ -11,7 +11,7 @@ const Footer = () => {
           Locação Simples, Obra Completa
         </p>
         <p className="text-secondary-foreground/30 text-xs">
-          © {new Date().getFullYear()} Locville. Todos os direitos reservados.
+          © {new Date().getFullYear()} Locville. Todos os direitos reservados. CNPJ 63.824.564/0001-69
         </p>
       </div>
     </footer>
