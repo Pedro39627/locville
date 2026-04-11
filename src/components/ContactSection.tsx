@@ -75,17 +75,26 @@ const ContactSection = () => {
             </div>
           </div>
 
-          <div className="rounded-2xl overflow-hidden border border-construction-gray/20 bg-construction-dark/30 min-h-[320px] flex items-center justify-center">
-            <iframe
-              title="Localização Locville"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.9561851465864!2d-48.82064652294827!3d-26.295520367702554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deb100cb666cb5%3A0x151957c671113f10!2sLocville%20-%20Aluguel%20de%20M%C3%A1quinas%20e%20Equipamentos!5e0!3m2!1spt-BR!2sbr!4v1775566245341!5m2!1spt-BR!2sbr"
-              width="100%"
-              height="100%"
-              style={{ border: 0, minHeight: 320 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+          <div className="flex flex-col gap-6">
+            <div className="rounded-2xl overflow-hidden border border-construction-gray/20 bg-construction-dark/30 min-h-[320px] flex items-center justify-center">
+              <iframe
+                title="Localização Locville"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.9561851465864!2d-48.82064652294827!3d-26.295520367702554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deb100cb666cb5%3A0x151957c671113f10!2sLocville%20-%20Aluguel%20de%20M%C3%A1quinas%20e%20Equipamentos!5e0!3m2!1spt-BR!2sbr!4v1775566245341!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="100%"
+                style={{ border: 0, minHeight: 320 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+            <div className="rounded-2xl overflow-hidden border border-construction-gray/20 bg-construction-dark/30 h-56 md:h-72 flex items-center justify-center relative group">
+              <img 
+                src="/locville/images/fachada.png" 
+                alt="Fachada da Locville" 
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
           </div>
         </div>
       </div>
