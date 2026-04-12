@@ -69,7 +69,7 @@ const PortfolioSection = () => {
         >
           <CarouselContent className="-ml-2 md:-ml-4">
             {equipmentList.map((item) => (
-              <CarouselItem key={item.id} className="pl-4 md:basis-1/2 lg:basis-1/4">
+              <CarouselItem key={item.id} className="pl-4 basis-[85%] md:basis-1/2 lg:basis-1/4">
                 <div className="rounded-2xl border border-border bg-muted/50 hover:border-primary/30 transition-colors h-full flex flex-col p-6">
                   <div className="w-full aspect-square mb-6 flex items-center justify-center p-4">
                     <img 
@@ -88,8 +88,8 @@ const PortfolioSection = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="hidden md:flex -left-12" />
-          <CarouselNext className="hidden md:flex -right-12" />
+          <CarouselPrevious className="flex -left-4 md:-left-12" />
+          <CarouselNext className="flex -right-4 md:-right-12" />
         </Carousel>
       </div>
     </section>
