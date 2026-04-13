@@ -90,7 +90,7 @@ const ContactSection = () => {
             </div>
             <div className="rounded-2xl overflow-hidden border border-construction-gray/20 bg-construction-dark/30 h-56 md:h-72 flex items-center justify-center relative group">
               <img 
-                src="/locville/images/fachada.png" 
+                src="/images/fachada.png" 
                 alt="Fachada da Locville" 
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />

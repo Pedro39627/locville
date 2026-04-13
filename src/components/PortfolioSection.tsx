@@ -11,39 +11,39 @@ const equipmentList = [
   {
     id: 1,
     name: "Martelete Perfurador",
-    image: "/locville/images/martelete_perfurador.png",
+    image: "/images/martelete_perfurador.png",
   },
 
     {
     id: 2,
     name: "Betoneira",
-    image: "/locville/images/betoneira.png", // Corrigido para incluir o caminho base local
+    image: "/images/betoneira.png", // Corrigido para incluir o caminho base local
   },
   {
     id: 3,
     name: "Andaimes",
-    image: "/locville/images/andaime.png",
+    image: "/images/andaime.png",
   },
   {
     id: 4,
     name: "Martelete Rompedor",
-    image: "/locville/images/martelete_rompedor.png",
+    image: "/images/martelete_rompedor.png",
   },
   {
     id: 5,
     name: "Compactador de Solo",
-    image: "/locville/images/compactador_solo.png",
+    image: "/images/compactador_solo.png",
   },
   {
     id: 6,
     name: "Gerador a Combustão",
-    image: "/locville/images/gerador.png",
+    image: "/images/gerador.png",
   },
 
     {
     id: 7,
     name: "Lixadeira",
-    image: "/locville/images/lixadeira.png",
+    image: "/images/lixadeira.png",
   },
 ];
 
