@@ -6,46 +6,20 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-const equipmentList = [
+const imageFiles = import.meta.glob('/public/images/*.png');
 
-  {
-    id: 1,
-    name: "Martelete Perfurador",
-    image: "/images/martelete_perfurador.png",
-  },
-
-    {
-    id: 2,
-    name: "Betoneira",
-    image: "/images/betoneira.png", // Corrigido para incluir o caminho base local
-  },
-  {
-    id: 3,
-    name: "Andaimes",
-    image: "/images/andaime.png",
-  },
-  {
-    id: 4,
-    name: "Martelete Rompedor",
-    image: "/images/martelete_rompedor.png",
-  },
-  {
-    id: 5,
-    name: "Compactador de Solo",
-    image: "/images/compactador_solo.png",
-  },
-  {
-    id: 6,
-    name: "Gerador a Combustão",
-    image: "/images/gerador.png",
-  },
-
-    {
-    id: 7,
-    name: "Lixadeira",
-    image: "/images/lixadeira.png",
-  },
-];
+const equipmentList = Object.keys(imageFiles)
+  .filter(path => !path.endsWith('/fachada.png'))
+  .map((path, index) => {
+    const fileName = path.split('/').pop() || '';
+    const name = fileName.replace('.png', '');
+    
+    return {
+      id: index + 1,
+      name: name,
+      image: path.replace('/public', ''),
+    };
+  });
 
 const PortfolioSection = () => {
   return (
@@ -79,7 +53,6 @@ const PortfolioSection = () => {
                     />
                   </div>
                   <div className="mt-auto text-center">
-                    <p className="text-sm text-primary mb-1 font-semibold">{item.category}</p>
                     <h3 className="font-bold text-lg text-foreground w-full break-words">
                       {item.name}
                     </h3>
