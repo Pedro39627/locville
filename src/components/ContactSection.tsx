@@ -48,10 +48,7 @@ const ContactSection = () => {
                     <span className="font-semibold text-secondary-foreground">Segunda a sexta:</span> 07:00–12:00 | 13:00–17:30
                   </p>
                   <p>
-                    <span className="font-semibold text-secondary-foreground">Sábado:</span> 07:00–11:00
-                  </p>
-                  <p>
-                    <span className="font-semibold text-secondary-foreground">Domingo:</span> Fechado
+                    <span className="font-semibold text-secondary-foreground">Sábado e Domingo:</span> Fechado
                   </p>
                 </div>
               </div>
