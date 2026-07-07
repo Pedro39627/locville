@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
 import logo from "@/assets/logo-bg-transparent.png";
 
-const WHATSAPP_LINK = "https://wa.me/5547996199995?text=Olá! Gostaria de solicitar um orçamento.";
+const WHATSAPP_LINK = "https://wa.me/5547988931391?text=Olá! Gostaria de solicitar um orçamento.";
 
 const navItems = [
   { label: "Início", href: "#inicio" },
