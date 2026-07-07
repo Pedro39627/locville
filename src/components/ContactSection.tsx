@@ -32,7 +32,7 @@ const ContactSection = () => {
               <div>
                 <h3 className="font-bold text-secondary-foreground mb-1">Telefone / WhatsApp</h3>
                 <a href="tel:+5547988931391" className="text-primary font-semibold hover:underline">
-                  (47) 988931391
+                  (47) 98893-1391
                 </a>
               </div>
             </div>
