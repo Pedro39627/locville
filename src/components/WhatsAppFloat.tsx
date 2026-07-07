@@ -1,6 +1,6 @@
 import { MessageCircle } from "lucide-react";
 
-const WHATSAPP_LINK = "https://wa.me/5547996199995?text=Olá! Gostaria de solicitar um orçamento.";
+const WHATSAPP_LINK = "https://wa.me/5547988931391?text=Olá! Gostaria de solicitar um orçamento.";
 
 const WhatsAppFloat = () => {
   return (
