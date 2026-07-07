@@ -3,7 +3,7 @@ import heroBg from "@/assets/locville-bg-clean.png";
 import heroBgPort from "@/assets/locville-bg-port.png";
 import logo from "@/assets/logo-bg-transparent.png";
 
-const WHATSAPP_LINK = "https://wa.me/5547996199995?text=Olá! Gostaria de solicitar um orçamento.";
+const WHATSAPP_LINK = "https://wa.me/5547988931391?text=Olá! Gostaria de solicitar um orçamento.";
 
 const HeroSection = () => {
   return (
